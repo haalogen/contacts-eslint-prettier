@@ -1,0 +1,43 @@
+{
+  "name": "contacts-redux",
+  "version": "1.0.0",
+  "description": "",
+  "main": "client/index.js",
+  "scripts": {
+    "lint": "eslint client/",
+    "lint:fix": "eslint client/ --fix",
+    "start": "npm run lint && concurrently --kill-others \"npm run watch\"  \"browser-sync start -s . \"",
+    "watch": "webpack --watch",
+    "webpack": "webpack"
+  },
+  "author": "Stanislav Nikitin",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "8.2.2",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "browser-sync": "^2.18.13",
+    "concurrently": "^3.5.0",
+    "css-loader": "^0.28.7",
+    "eslint": "4.19.1",
+    "eslint-config-prettier": "2.9.0",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-prettier": "2.6.0",
+    "eslint-plugin-react": "^7.7.0",
+    "prettier": "1.11.1",
+    "prop-types": "^15.6.0",
+    "react": "^16.1.0",
+    "react-dom": "^16.1.0",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "style-loader": "^0.19.0",
+    "uglifyjs-webpack-plugin": "^1.2.4",
+    "webpack": "^3.8.1"
+  },
+  "dependencies": {
+    "map.prototype.tojson": "^0.1.3"
+  }
+}
